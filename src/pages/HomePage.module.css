@@ -1,0 +1,43 @@
+/* src/pages/HomePage.module.css */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .message {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+  }
+  /* src/pages/HomePage.module.css */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.message {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+/* Spinner stili */
+.spinner {
+  border: 8px solid #f3f3f3; /* Yorug‘lik kulrang rang */
+  border-top: 8px solid #3498db; /* Mavi rang */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto; /* Markazlashtirish uchun */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

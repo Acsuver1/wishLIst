@@ -1,0 +1,104 @@
+/* src/components/ProductCard/ProductCard.module.css */
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info h3 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 8px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info h3:hover {
+  color: #3498db;
+}
+
+.info p {
+  margin: 4px 0;
+  color: #555555;
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.category {
+  background-color: #f1f1f1;
+  color: #777777;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  color: #f39c12;
+}
+
+.stock {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.brand {
+  color: #2980b9;
+  font-style: italic;
+}
+
+.likeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.likeButton:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.likeButton:focus {
+  outline: none;
+}
